@@ -1,0 +1,101 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "go@1.21.9": {
+      "last_modified": "2024-05-03T15:42:32Z",
+      "resolved": "github:NixOS/nixpkgs/5fd8536a9a5932d4ae8de52b7dc08d92041237fc#go_1_21",
+      "source": "devbox-search",
+      "version": "1.21.9",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fwnqxipshzffpg7x6kwvp24yllwzaq1i-go-1.21.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fwnqxipshzffpg7x6kwvp24yllwzaq1i-go-1.21.9"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/041scml4rqhk0b87rcaa4b1zk3yckgbf-go-1.21.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/041scml4rqhk0b87rcaa4b1zk3yckgbf-go-1.21.9"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gz9addf37imxbwqkilfm3wm2hbz5k110-go-1.21.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gz9addf37imxbwqkilfm3wm2hbz5k110-go-1.21.9"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fhcgycswji65n5khvc4dj0x8f5asvwhs-go-1.21.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fhcgycswji65n5khvc4dj0x8f5asvwhs-go-1.21.9"
+        }
+      }
+    },
+    "opentofu@latest": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#opentofu",
+      "source": "devbox-search",
+      "version": "1.9.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2di6dcym6r232fl7k3fx8k5jgs6hxa1w-opentofu-1.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2di6dcym6r232fl7k3fx8k5jgs6hxa1w-opentofu-1.9.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jlrnqb9fv36qrsm6yvr4g2vidsv925xc-opentofu-1.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jlrnqb9fv36qrsm6yvr4g2vidsv925xc-opentofu-1.9.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/z26ps20bykay9w5xrdzbml97w0akf1zx-opentofu-1.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/z26ps20bykay9w5xrdzbml97w0akf1zx-opentofu-1.9.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5azlfblak86zzjsn1fagw8lksb3sz7n0-opentofu-1.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5azlfblak86zzjsn1fagw8lksb3sz7n0-opentofu-1.9.1"
+        }
+      }
+    }
+  }
+}

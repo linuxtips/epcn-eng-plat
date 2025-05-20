@@ -1,0 +1,33 @@
+# docker build --progress=plain --no-cache -f Containerfile -t go-hello .
+# docker build --progress=plain --no-cache -f Containerfile -t thedevconf/go-hello:0.0.1 .
+# docker run -it --rm -p 8080:8080 thedevconf/go-hello:0.0.1
+# docker push thedevconf/go-hello:0.0.1
+FROM golang:1.21-alpine AS builder
+
+WORKDIR /src
+
+# Copia os arquivos de dependência e baixa módulos
+# COPY go.mod go.sum ./
+# RUN go mod download
+
+# Copia o restante do código
+COPY . .
+
+# Compila o binário (ajuste o caminho do main se necessário)
+WORKDIR /src
+RUN go build -o bin/go-hello ./cmd
+
+# Etapa final: imagem enxuta
+FROM fedora:latest
+
+WORKDIR /app
+
+# Copia apenas o binário da etapa anterior
+COPY --from=builder /src/bin/go-hello .
+
+# Expõe a porta usada pela aplicação
+EXPOSE 8080
+
+# Comando de inicialização
+CMD ["./go-hello"]
+
