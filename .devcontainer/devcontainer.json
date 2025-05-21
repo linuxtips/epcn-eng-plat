@@ -1,16 +1,21 @@
 {
-  "name": "Devbox Remote Container",
-  "build": {
-    "dockerfile": "./Dockerfile",
-    "context": ".."
+  "name": "DevBoxContainer",
+  "image": "mcr.microsoft.com/devcontainers/go",
+  "features": {
+    "ghcr.io/dlouwers/devcontainer-features/devbox:1" : {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}	
   },
   "customizations": {
     "vscode": {
       "settings": {},
       "extensions": [
-        "jetpack-io.devbox"
+        "jetpack-io.devbox",
+        "golang.go"
       ]
     }
   },
-  "remoteUser": "devbox"
+  "postCreateCommand": "devbox install",
+  "forwardPorts": [
+    8080
+  ]
 }
