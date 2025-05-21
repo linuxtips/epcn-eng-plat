@@ -3,7 +3,8 @@
   "packages": [
     "opentofu@latest",
     "go@1.21.9",
-    "direnv@latest"
+    "direnv@latest",
+    "awscli2@latest"
   ],
   "shell": {
     "init_hook": ["echo 'Welcome to devbox!' > /dev/null"],

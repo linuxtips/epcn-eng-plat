@@ -10,7 +10,8 @@
       "settings": {},
       "extensions": [
         "jetpack-io.devbox",
-        "golang.go"
+        "golang.go",
+        "hashicorp.terraform"
       ]
     }
   },
@@ -19,3 +20,4 @@
     8080
   ]
 }
+
