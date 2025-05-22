@@ -1,6 +1,6 @@
 resource "aws_ecs_cluster" "main" {
-  name = "epcn-ecs-cluster"
+  name = "${var.env_id}-epcn-ecs-cluster"
   tags = {
-    Name = "epcn-ecs-cluster"
+    Name = "${var.env_id}-epcn-ecs-cluster"
   }
 }

@@ -23,11 +23,6 @@ variable "ecs_security_group_id" {
   type        = string
 }
 
-variable "container_image" {
-  description = "The container image to run"
-  type        = string
-}
-
 variable "cpu" {
   description = "CPU units for the task"
   type        = number
