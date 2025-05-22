@@ -133,4 +133,27 @@ resource "aws_security_group" "apps" {
   }
 }
 
+resource "aws_security_group" "ecs_services" {
+    name        = "epcn-ecs-services-sg"
+    description = "Allow ECS services communication"
+    vpc_id      = aws_vpc.main.id
 
+    ingress {
+        description     = "Allow traffic from ALB SG"
+        from_port       = 80
+        to_port         = 80
+        protocol        = "tcp"
+        security_groups = [aws_security_group.alb.id]
+    }
+
+    egress {
+        from_port   = 0
+        to_port     = 0
+        protocol    = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+    }
+
+    tags = {
+        Name = "epcn-ecs-services-sg"
+    }
+}

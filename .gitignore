@@ -30,3 +30,5 @@ bin
 # terraform state files
 *tfstate*
 .terraform*
+
+aws-nuke.yaml

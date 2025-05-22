@@ -1,3 +1,4 @@
 - Check go version update
 - Base image
 - Add tf backend
+- domain validation

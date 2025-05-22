@@ -10,8 +10,7 @@ variable "env_id" {
   default     = "alpha"
 }
 
-variable "env_domain" {
-  description = "The environment domain."
+variable "certificate_arn" {
+  description = "The ARN of the ACM certificate."
   type        = string
-  default     = "linuxtips.local"
 }

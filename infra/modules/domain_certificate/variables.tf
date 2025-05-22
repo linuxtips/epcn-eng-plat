@@ -10,8 +10,13 @@ variable "env_id" {
   default     = "alpha"
 }
 
-variable "certificate_arn" {
-  description = "The ARN of the ACM certificate."
+variable "env_domain" {
+  description = "The environment domain."
   type        = string
-  
+  default     = "linuxtips.local"
+}
+
+variable "zone_id" {
+  description = "The ID of the Route 53 hosted zone."
+  type        = string
 }

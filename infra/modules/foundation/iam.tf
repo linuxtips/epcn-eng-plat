@@ -1,5 +1,5 @@
 resource "aws_iam_role" "ecs_task_execution" {
-  name = "epcn-ecs-task-execution-role"
+  name = "${var.env_id}--epcn-ecs-exec-role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -11,7 +11,8 @@ resource "aws_iam_role" "ecs_task_execution" {
     }]
   })
   tags = {
-    Name = "epcn-ecs-task-execution-role"
+    Name = "${var.env_id}--epcn-ecs-exec-role"
+    Env  = var.env_id
   }
 }
 
@@ -21,7 +22,7 @@ resource "aws_iam_role_policy_attachment" "ecs_task_execution_policy" {
 }
 
 resource "aws_iam_role" "ecs_service" {
-  name = "epcn-ecs-service-role"
+  name = "${var.env_id}--epcn-ecs-service-role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -33,7 +34,8 @@ resource "aws_iam_role" "ecs_service" {
     }]
   })
   tags = {
-    Name = "epcn-ecs-service-role"
+    Name = "${var.env_id}--epcn-ecs-service-role"
+    Env  = var.env_id
   }
 }
 

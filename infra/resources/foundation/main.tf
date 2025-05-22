@@ -5,9 +5,8 @@ provider "aws" {
 module "foundation" {
     source = "../../modules/foundation"
     aws_region = var.aws_region
-    env_domain = var.env_id
     env_id = var.env_id
-    env_domain = var.env_domain
+    certificate_arn = var.certificate_arn
 }
 
 // IAM Roles + Policies

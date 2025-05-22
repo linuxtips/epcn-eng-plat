@@ -1,6 +1,54 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "aws-nuke@latest": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#aws-nuke",
+      "source": "devbox-search",
+      "version": "3.52.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8b8539csx9x8kgq0d6ia8hp6xfav0fhg-aws-nuke-3.52.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8b8539csx9x8kgq0d6ia8hp6xfav0fhg-aws-nuke-3.52.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ka6fy03gf169nb6wsxysj50y9vkmin3g-aws-nuke-3.52.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ka6fy03gf169nb6wsxysj50y9vkmin3g-aws-nuke-3.52.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/67z072bv9isq9gsi5hw7qslq1mq9kh9a-aws-nuke-3.52.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/67z072bv9isq9gsi5hw7qslq1mq9kh9a-aws-nuke-3.52.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mqqlyi1wk4j5g6v60mm6q3yv2dyblp6l-aws-nuke-3.52.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/mqqlyi1wk4j5g6v60mm6q3yv2dyblp6l-aws-nuke-3.52.1"
+        }
+      }
+    },
     "awscli2@latest": {
       "last_modified": "2025-05-16T20:19:48Z",
       "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#awscli2",
